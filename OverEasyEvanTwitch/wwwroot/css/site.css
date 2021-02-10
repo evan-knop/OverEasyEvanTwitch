@@ -7,6 +7,19 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.happyEgg {
+    margin-bottom: 2em;
+    width: 150px;
+    height: 150px;
+}
+
+.homeContent {
+    margin-top: 14em;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -59,9 +72,20 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
 .footer {
   position: absolute;
   bottom: 0;
